@@ -1,0 +1,15 @@
+<h1>Here's all the stuff you have to do</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+
+  <% @todos.each do |todo| %>
+    <tr>
+      <td><%= todo.title %> </td>
+      <td><%= todo.text %> </td>
+    </tr>
+  <% end %>
+</table>
